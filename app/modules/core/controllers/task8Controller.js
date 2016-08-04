@@ -15,7 +15,7 @@ define(function(){
                 return $scope.form.input1.$valid
             }
             var next2 = function(){
-                return .$valid
+                return $scope.form.input1.$valid
             }
 
             $scope.$watch(next1, function (newVal,oldVal) {
