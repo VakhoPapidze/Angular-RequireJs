@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestApp</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="animation.css" rel="stylesheet">
+</head>
+<body data-ng-controller="mainController">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="home">Test Application</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+                <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+                <li ui-sref-active="active"><a ui-sref="contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mainframe ui-view-container">
+    <div class="row">
+        <div class="span12 ui-view-container">
+            <div class="well" ui-view></div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/requirejs/require.js" data-main="app/main.js"></script>
+
+</body>
+</html>
